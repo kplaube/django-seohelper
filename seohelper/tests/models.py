@@ -8,7 +8,7 @@ class DocumentModelTests(TestCase):
 
     def test_repr(self):
         """
-        Ensures the casting to string.
+        Ensures it's casting to string.
         """
         document = Document.objects.get(pk=1)
         self.assertEquals(str(document), 'Home page')

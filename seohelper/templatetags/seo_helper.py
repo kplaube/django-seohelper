@@ -25,7 +25,7 @@ class SeoHelperNode(template.Node):
         return ''
 
 
-@register.tag('seo_helper')
+@register.tag('seohelper')
 def do_seo_helper(parser, token):
     """
     Gets the metadata (description, keywords, robots, etc) stored in the

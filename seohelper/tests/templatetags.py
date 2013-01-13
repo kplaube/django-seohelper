@@ -13,7 +13,7 @@ class SeohelperTemplatetagsTests(TestCase):
         url = '/'
         document = Document.objects.get(url=url)
 
-        # Successful parse 
+        # Successful parse
         context = {'url': url + '?q=1'}
         node = SeoHelperNode('url', 'meta')
         node.render(context)
