@@ -21,6 +21,7 @@ if not settings.configured:
             'django.contrib.contenttypes',
             'django.contrib.sessions',
             'django.contrib.sites',
+            'django.contrib.flatpages',
             APP_NAME,
         ],
         ROOT_URLCONF='',
