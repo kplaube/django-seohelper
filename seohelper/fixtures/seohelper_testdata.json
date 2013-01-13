@@ -1,0 +1,58 @@
+[
+    {
+        "model": "seohelper.document",
+        "pk": 1,
+        "fields": {
+            "url": "/",
+            "title": "Home page",
+            "description": "Check my website",
+            "keywords": "home, page, my, website",
+            "robot_tags": "noindex,follow"
+        }
+    },
+    {
+        "model": "seohelper.document",
+        "pk": 2,
+        "fields": {
+            "url": "/portfolio/",
+            "title": "Portfolio",
+            "description": "My jobs dude!",
+            "keywords": "portfolio, jobs, freelancer",
+            "robot_tags": "noindex,follow"
+        }
+    },
+    {
+        "model": "seohelper.document",
+        "pk": 3,
+        "fields": {
+            "url": "/portfolio/my-first-job/",
+            "title": "My first job | Portfolio",
+            "description": "My first job",
+            "keywords": "portfolio, my first job",
+            "robot_tags": "index,follow"
+        }
+    },
+    {
+        "model": "seohelper.document",
+        "pk": 4,
+        "fields": {
+            "url": "/contact/",
+            "title": "Contact",
+            "description": "",
+            "keywords": "",
+            "robot_tags": "noindex,nofollow"
+        }
+    },
+
+    {
+        "model": "flatpages.flatpage",
+        "pk": 1,
+        "fields": {
+            "url": "/flatpage/",
+            "title": "A simple flatpage",
+            "content": "A simple flatpage, with simple description",
+            "enable_comments": 1,
+            "sites": [1]
+        }
+    }
+]
