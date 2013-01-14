@@ -15,25 +15,25 @@ class Document(models.Model):
     """
     Meta-information for document.
     """
-    url = models.CharField(_(u'URL'), max_length=255)
-    title = models.CharField(_(u'Título'), max_length=140)
-    description = models.TextField(_(u'Descrição'), blank=True, null=True)
+    url = models.CharField(_('URL'), max_length=255)
+    title = models.CharField(_('Title'), max_length=140)
+    description = models.TextField(_('Description'), blank=True, null=True)
     keywords = models.CharField(
-        _(u'Palavras-chave'),
+        _('Keywords'),
         max_length=255,
         blank=True,
         null=True,
     )
     robot_tags = models.CharField(
-        _(u'Robots'),
+        _('Robots'),
         max_length=20,
         choices=ROBOT_TAGS,
         default=ROBOT_TAGS[0][0],
     )
 
     class Meta:
-        verbose_name = _('Documento')
-        verbose_name_plural = _('Documentos')
+        verbose_name = _('Document')
+        verbose_name_plural = _('Documents')
         ordering = ('url', )
 
     def __unicode__(self):
