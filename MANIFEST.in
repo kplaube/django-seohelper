@@ -1,3 +1,5 @@
 include README.md
 include LICENSE
 recursive-include seohelper/fixtures *.json
+recursive-include seohelper/templatetags *
+recursive-include seohelper/tests *
