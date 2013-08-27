@@ -21,7 +21,7 @@ setup(
 
     url='https://github.com/kplaube/django-seohelper/',
     packages=['seohelper', ],
-    tests_require=['django>=1.3,<1.5', ],
+    tests_require=['django>=1.3,<=1.6', ],
     test_suite='runtests.runtests',
     include_package_data=True,
     zip_safe=False,

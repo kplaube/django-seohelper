@@ -1,7 +1,10 @@
 django-seohelper
 ================
 
-![Travis CI](https://secure.travis-ci.org/kplaube/django-seohelper.png)
+[![Travis CI](https://secure.travis-ci.org/kplaube/django-seohelper.png)](https://travis-ci.org/kplaube/django-seohelper)
+[![Coverage Status](https://coveralls.io/repos/kplaube/django-seohelper/badge.png)](https://coveralls.io/r/kplaube/django-seohelper)
+[![PyPI version](https://badge.fury.io/py/django-seohelper.png)](http://badge.fury.io/py/django-seohelper)
+[![Downloads](http://pypip.in/d/django-seohelper/badge.png)](https://crate.io/packages/django-seohelper/)
 
 **Django SeoHelper** is a pluggable application that helps you to add
 meta-information to your Django templates.
