@@ -13,6 +13,7 @@ setup(
     license="GNU Lesser General Public License (LGPL), Version 3",
     description="Manager the meta information of your pages in Django",
     long_description=README,
+    long_description_content_type="text/markdown",
     keywords="web django apps seo seohelper",
     author="Klaus Laube",
     author_email="kplaube@gmail.com",
