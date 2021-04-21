@@ -29,8 +29,8 @@ Configuring
 
 You need to put the code below in your template file:
 
-{% load seo_helper %}
-{% seo_helper request.path as meta %}
+    {% load seo_helper %}
+    {% seo_helper request.path as meta %}
 
     <html>
     <head>
