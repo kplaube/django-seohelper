@@ -19,6 +19,10 @@ develop-eggs
 lib
 lib64
 
+# Python
+.python-version
+.coverage
+
 # Installer logs
 pip-log.txt
 

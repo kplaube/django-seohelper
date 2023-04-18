@@ -5,9 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 django = "*"
-tox = "*"
+pytest = "*"
+tox = "<4"
 tox-pyenv = "*"
-tox-travis = "*"
 
 [packages]
 

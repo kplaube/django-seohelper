@@ -1,15 +1,13 @@
 # django-seohelper
 
-[![Travis CI](https://secure.travis-ci.org/kplaube/django-seohelper.png)](https://travis-ci.org/kplaube/django-seohelper)
-[![Coverage Status](https://coveralls.io/repos/kplaube/django-seohelper/badge.png)](https://coveralls.io/r/kplaube/django-seohelper)
 [![PyPI version](https://badge.fury.io/py/django-seohelper.png)](http://badge.fury.io/py/django-seohelper)
 
 **Django SeoHelper** is a pluggable application that helps you to add
 meta-information to your Django templates.
 
-Soon, more information about usage.
+## How to use
 
-## Installation
+### Installation
 
 Using pip:
 
@@ -25,7 +23,7 @@ Configuring
 
 - Add `seohelper` to your `INSTALLED_APPS`
 
-## Adding the code to your Template
+### Adding the code to your Template
 
 You need to put the code below in your template file:
 
@@ -47,7 +45,7 @@ You need to put the code below in your template file:
 
 Where `seo_helper` is the templatetag, `request.path` is the complete path of the document and `meta` is the variable where SeoHelper will keep the document's metadata.
 
-## Using the admin
+### Using the admin
 
 Let's suppose we want to add metadata to `http://myblog.com/2013/01/01/hello/`. So,
 we need to access `/admin/seohelper/document/add/` and create a record with these parameters:
@@ -58,3 +56,25 @@ we need to access `/admin/seohelper/document/add/` and create a record with thes
 - **Keywords:** index,follow
 
 Now, when we access the `http://myblog.com/2013/01/01/hello/`, SeoHelper will restore those data from database and will show these in your page.
+
+## Contributing
+
+Contributions are very welcome!
+
+One can run the tests through `tox`. With luck, it'll
+install all the dependencies and set up the virtual environments for the different
+combinations of Python and Django versions. You'll still be required to have the
+different Python versions in your machine, and it's recommended to use `pyenv` to
+have it done.
+
+Activate the different Python versions first:
+
+    pyenv local 3.10.7 3.9.14 3.8.14 3.7.14
+
+It's recommended to rely on `Pipfile` to mananage dependencies and venvs:
+
+    pipenv install --dev
+
+And finally, you are good to go with Tox:
+
+    pipenv run tox
