@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+
+try:
+    from django.utils.translation import ugettext_lazy as _
+except ImportError:
+    from django.utils.translation import gettext_lazy as _
 
 ROBOT_TAGS = (
     ("index,follow", "Index, Follow"),
@@ -19,9 +23,17 @@ class Document(models.Model):
     url = models.CharField(_("URL"), max_length=255)
     title = models.CharField(_("Title"), max_length=140)
     description = models.TextField(_("Description"), blank=True, null=True)
-    keywords = models.CharField(_("Keywords"), max_length=255, blank=True, null=True,)
+    keywords = models.CharField(
+        _("Keywords"),
+        max_length=255,
+        blank=True,
+        null=True,
+    )
     robot_tags = models.CharField(
-        _("Robots"), max_length=20, choices=ROBOT_TAGS, default=ROBOT_TAGS[0][0],
+        _("Robots"),
+        max_length=20,
+        choices=ROBOT_TAGS,
+        default=ROBOT_TAGS[0][0],
     )
 
     class Meta:
