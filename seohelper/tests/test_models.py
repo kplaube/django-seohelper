@@ -11,4 +11,4 @@ class DocumentModelTests(TestCase):
         Ensures it's casting to string.
         """
         document = Document.objects.get(pk=1)
-        self.assertEquals(str(document), 'Home page')
+        self.assertEqual(str(document), 'Home page')

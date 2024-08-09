@@ -4,12 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+coverage = "*"
 django = "*"
 pytest = "*"
-tox = "<4"
-tox-pyenv = "*"
+tox = "*"
 
 [packages]
-
-[requires]
-python_version = "3.7"
