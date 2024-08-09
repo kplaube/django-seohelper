@@ -17,4 +17,5 @@ class SeohelperTemplatetagsTests(TestCase):
         context = {'url': url + '?q=1'}
         node = SeoHelperNode('url', 'meta')
         node.render(context)
-        self.assertEquals(context['meta'], document)
+
+        self.assertEqual(context['meta'], document)
