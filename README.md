@@ -1,5 +1,7 @@
 # django-seohelper
 
+**DEPRECATED:** Use https://github.com/nephila/django-meta instead. It more features and is actively being developed :)
+
 [![PyPI version](https://badge.fury.io/py/django-seohelper.png)](http://badge.fury.io/py/django-seohelper)
 
 **Django SeoHelper** is a pluggable application that helps you to add
